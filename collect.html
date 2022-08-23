@@ -1,13 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+
+    <title>CSV File to HTML Table Using AJAX jQuery</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>collect</title>
 </head>
+
 <body>
-    <p>hello</p>
-    <img id="myImg" alt="Tuong" style="width:100%;max-width:300px">
-</body>
-</html>
+
+    <!--     Header-->
+    <div id="header">
+        <button type="button" class="button">Basket</button>
+    </div>
+
+    <!--    Main Login Form-->
+    <div class="SignLog">
+        <h2>Sign up or Log in</h2>
+    </div>
+
+    <body onload="checkLogin()">
+
+        <div id="loginPara" class="login">
+            <form id="login" action=index.html onsubmit="return false">
+                <input type="text" placeholder="Enter Email Address" name="userid" id="emailin"><br>
+                <input type="password" placeholder="Create a password" name="pswrd" id=passwordin><br>
+                <input type="button" onclick="login()" value="Login" id="loginbutton" />
+                <p>-------------------------- or----------------------------</p>
+                <a href="register.html"> <input type="button" value="Register" id="registerbutton" /> </a>
+                <br>
+                <p>By continuing you agree to our <a>T&Cs</a>. Please also check out our <a>Privacy Policy</a>. We use
+                    your data to offer you a personalised experience and to better understand and improve our services.
+                    For more information <a>see here</a>.</p>
+            </form>
+
+            <div id="loginFailure" style="color:red;">
+                <p></p>
+            </div>
+
+        </div>
+
+        <!--          LOCAL STORAGE IS CHECKED TO SEE IF USER IS REGISTERED.-->
+        <script>
+
+            function checkLogin() {
+
+                if (localStorage.loggedinUsrEmail !== undefined) {
+
+                    var usrObj = JSON.parse(localStorage[localStorage.loggedinUsremail]);
+
+                    document.getElementById("loginPara").innerHTM = usrObj.firstName + " logged in."
+
+                }
+            }
+
+            function login() {
+
+                var email = document.getElementById("emailin").value;
+
+                if (localStorage[email] === undefined) {
+
+                    document.getElementById("loginFailure").innerHTML = "Email not recognized";
+                    return;
+                }
+
+                else {
+                    var usrObj = JSON.parse(localStorage[email]);
+                    var password = document.getElementById("passwordin").value;
+
+                    if (password === usrObj.password) {
+                        document.getElementById("loginPara").innerHTML = usrObj.firstname + " logged in.";
+                        document.getElementById("loginFailure").innerHTML = "";
+                        localStorage.loggedinUsrEmail = usrObj.email;
+
+                    }
+                    else {
+                        document.getElementById("loginFailure").innerHTML = "Password incorrect.";
+                    }
+
+                }
+
+            }
+
+
+
+        </script>
+
+    </body>

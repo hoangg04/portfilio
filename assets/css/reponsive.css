@@ -1,0 +1,16 @@
+@media screen and (min-width: 576px) {
+    .g-col-sm-2{
+        grid-template-columns: repeat(2,1fr) !important;
+}
+}
+
+@media screen and (min-width: 786px) {
+    .g-col-md-3{
+        grid-template-columns: repeat(3,1fr) !important;
+}
+}
+@media screen and (min-width: 992px) {
+    .g-col-lg-3{
+        grid-template-columns: repeat(3,1fr) !important;
+}
+}
