@@ -44,8 +44,9 @@ body {
   max-width:40rem !important;
   word-wrap: break-word;
 }
-.grid{
+.d-grid{
   display: grid;
+  grid-template-columns:auto !important;
 }
 .g-col-3{
   grid-template-columns: repeat(3,1fr) ;
