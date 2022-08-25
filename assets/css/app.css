@@ -56,8 +56,12 @@ body {
   border: 1px solid transparent;
 }
 
+.bg-nav {
+  background-color: var(--bs-nav-bg) !important;
+}
+
 .hover-transparent:hover {
-  background-color: transparent;
+  background-color: #2b2b661e !important;
   border: 1px solid var(--bs-colums-bg) !important;
 }
 .icon {
@@ -78,4 +82,21 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
+}
+.fs-7 {
+  font-size: 0.875rem;
+}
+.xy-4 {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.nav-link.active {
+  color: var(--bs-light);
+  background-color: var(--bs-black);
+}
+
+.nav-link:hover{
+  color: var(--bs-light) !important;
+  opacity: 0.8;
 }

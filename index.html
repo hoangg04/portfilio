@@ -42,6 +42,7 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
@@ -61,204 +62,379 @@
 </head>
 
 <body>
-    <div class="container-lg container-xl container-sm">
-        <header class="header mt-5">
+    <div class="scrollspy-example container-lg container-xl container-sm" data-bs-spy="scroll"
+        data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+        <!-----------------------------Begin Home --------------------------------------->
+        
+        <header id="home" class="header mt-5">
             <p class="text-light fs-6 text-center p-2 m-0 text-capitalize">hello, I'm</p>
             <p class="text-center text-light text-capitalize fs-4 p-2 m-0">Do Trong Hoang</p>
             <p class="text-center text-muted text-capitalize fs-6 p-2 m-0">Wellcome</p>
 
             <div class="d-flex justify-content-center">
                 <a download href="./assets/img/cv.pdf" class="btn btn-primary disabled m-2">Download CV</a>
-                <a href="#" class="btn btn-info btn-outline-info m-2">Let's Talk</a>
+                <a href="#contact" class="btn btn-info btn-outline-info m-2">Let's Talk</a>
             </div>
             <div class="d-flex mx-auto m-5">
                 <img class="image img-fluid mx-auto d-block" src="./assets/img/me.jpg" alt="me">
             </div>
         </header>
-        <div class="about m-4">
-            <p class="text-light fs-6 text-center m-0 text-capitalize">get to now</p>
-            <p class="text-center text-info text-opacity-75 text-capitalize fs-4 p-2 m-0 ">About Me</p>
+
+        <!-----------------------------End Home --------------------------------------->
+
+
+        <!-----------------------------Begin About --------------------------------------->
+
+        <div id="about" class="container-fluid">
+            <div class="about m-4">
+                <p class="text-light fs-6 text-center m-0 text-capitalize">get to now</p>
+                <p class="text-center text-info text-opacity-75 text-capitalize fs-4 p-2 m-0 ">About Me</p>
+            </div>
+
+            <div
+                class="justify-content-lg-around d-flex flex-xl-row flex-lg-column flex-md-column flex-sm-column justify-content-center align-items-center flex-column">
+                <div class="about_img rounded-5 m-5 flex-shrink-0">
+                    <img class="img-fluid d-block rounded-5" src="./assets/img/me-about.jpg" alt="me">
+                </div>
+                <div class="row flex-column justify-content-center align-items-center">
+                    <div class="d-grid m-lg-1 justify-content-center g-col-2 g-col-sm-2 g-col-md-3 g-col-lg-3 gap-4">
+                        <div
+                            class="g-col-6 d-flex rounded-2 bg-column my-3 m-auto xy-12 justify-content-center flex-column align-items-center flex-shrink-0 hover-transparent transition-e-i-e">
+                            <span class="text-info material-symbols-outlined m-4">
+                                workspace_premium
+                            </span>
+                            <p class="text-info text-capitalize fs-6 m-2 fw-semibold">experience</p>
+                            <p class="text-capitalize text-light opacity-75 fs-6 fw-light">Basics</p>
+                        </div>
+                        <div
+                            class="g-col-6 d-flex rounded-2 bg-column my-3 m-auto xy-12 justify-content-center flex-column align-items-center flex-shrink-0 hover-transparent transition-e-i-e">
+                            <span class="text-info material-symbols-outlined m-4">
+                                group
+                            </span>
+                            <p class="text-info text-capitalize fs-6 m-2 fw-semibold">Clients</p>
+                            <p class="text-capitalize text-light opacity-75 fs-6 fw-light">No</p>
+
+                        </div>
+                        <div
+                            class="g-col-6 d-flex rounded-2 bg-column my-3 m-auto xy-12 justify-content-center flex-column align-items-center flex-shrink-0 hover-transparent transition-e-i-e">
+                            <span class="text-info material-symbols-outlined m-4">
+                                bookmark
+                            </span>
+                            <p class="text-info text-capitalize fs-6 m-2 fw-semibold">Projects</p>
+                            <p class="text-capitalize text-light opacity-75 fs-6 fw-light">5+ completed</p>
+
+                        </div>
+                    </div>
+                    <div class="p-lg-2 p-xl-2 p-md-2 px-5 w-40">
+                        <p class="text-capitalize text-light opacity-75 fs-6 fw-light">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing
+                            elit. Reiciendis nisi maxime reprehenderit adipisci. Harum modi maiores adipisci mollitia
+                            voluptas, iure at.
+                            Libero omnis officiis impedit consectetur? Asperiores ex consequuntur soluta.</p>
+                    </div>
+                    <div class="p-lg-2 p-xl-2 p-md-2 px-5">
+                        <a href="#contact" class="btn btn-info btn-outline-info m-lg-2 m-xl-2">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div
-            class="justify-content-lg-around d-flex flex-xl-row flex-lg-column flex-md-column flex-sm-column justify-content-center align-items-center flex-column">
-            <div class="about_img rounded-5 m-5 flex-shrink-0">
-                <img class="img-fluid d-block rounded-5" src="./assets/img/me-about.jpg" alt="me">
+        <!-----------------------------End About --------------------------------------->
+
+
+        <!-----------------------------Begin Experience --------------------------------------->
+        
+        <div id="experience" class="container-fluid">
+            <div class="skills m-5">
+                <p class="text-light fs-6 text-center m-0 text-capitalize">what skills i have</p>
+                <p class="text-center text-info text-opacity-75 text-capitalize fs-4 p-2 m-0 ">My experience</p>
             </div>
-            <div class="row flex-column justify-content-center align-items-center">
-                <div class="d-grid m-lg-1 justify-content-center g-col-2 g-col-sm-2 g-col-md-3 g-col-lg-3 gap-4">
+            <div
+                class="d-flex justify-content-evenly flex-column flex-xl-row flex-md-row flex-lg-row flex-xxl-row gap-4 container-lg container-xl p-3">
+                <div
+                    class="bg-column justify-content-center border-transparent rounded  col-md-6 d-flex align-items-center flex-column hover-transparent transition-e-i-e">
+                    <p class="text-capitalize fs-6 m-3 fw-semibold text-info">Frontend development</p>
+                    <div class="d-flex row container-fluid mb-4">
+                        <div class="col-6 d-flex align-items-start my-3">
+                            <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
+                            <div class="mx-2 d-flex flex-column">
+                                <span class="text-light text-uppercase fs-6 fw-normal mb-2">HTML</span>
+                                <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-start my-3">
+                            <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
+                            <div class="mx-2 d-flex flex-column">
+                                <span class="text-light text-uppercase fs-6 fw-normal mb-2">CSS</span>
+                                <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-start my-3">
+                            <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
+                            <div class="mx-2 d-flex flex-column">
+                                <span class="text-light text-capitalize fs-6 fw-normal mb-2">Javascript</span>
+                                <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-start my-3">
+                            <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
+                            <div class="mx-2 d-flex flex-column">
+                                <span class="text-light text-capitalize fs-6 fw-normal mb-2">bootstrap</span>
+                                <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div
+                    class="bg-column justify-content-center border-transparent rounded  col-md-6 d-flex align-items-center flex-column hover-transparent transition-e-i-e">
+                    <p class="text-capitalize fs-6 m-3 fw-semibold text-info">Backend development</p>
+                    <div class="d-flex row container-fluid mb-4">
+                        <div class="col-6 d-flex align-items-start my-3">
+                            <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
+                            <div class="mx-2 d-flex flex-column">
+                                <span class="text-light text-capitalize fs-6 fw-normal mb-2">None</span>
+                                <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-start my-3">
+                            <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
+                            <div class="mx-2 d-flex flex-column">
+                                <span class="text-light text-capitalize fs-6 fw-normal mb-2">None</span>
+                                <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex align-items-start my-3">
+                            <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
+                            <div class="mx-2 d-flex flex-column">
+                                <span class="text-light text-capitalize fs-6 fw-normal mb-2">None</span>
+                                <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!---------------------------End Experience --------------------------------------->
+
+        <!------------------------------Begin Portfolio --------------------------------------->
+        
+        <div id="portfolio" class="container-fluid">
+            <div class="works d-flex m-5 flex-column align-items-center justify-content-center">
+                <p class="text-light fs-6 text-center m-0 text-capitalize">my recent work</p>
+                <p class="text-center text-info text-opacity-75 text-capitalize fs-4 p-2 m-0 ">Portfolio</p>
+
+            </div>
+            <div
+                class="d-grid justify-content-center g-col-2 g-col-sm-2 g-col-md-2 g-col-lg-3 gap-4 container-lg container-xl">
+                <div class="container-fluid d-flex rounded-5 bg-column my-3 m-auto justify-content-center flex-column align-items-center p-3 pb-4
+                            hover-transparent transition-e-i-e border-transparent">
+                    <div class="flex-shrink-0 my-3" style="height: 10rem;">
+                        <img class="img-fluid rounded-4 img_cover" src="./assets/img/img_temp_architect.jpeg"
+                            alt="img_temp_architect" style="height:100%">
+                    </div>
+                    <p class="text-light fs-6 text-capitalize text-line-clamp-2">temp_architect form template
+                        W3schools.com
+                    </p>
+                    <div class="d-flex justify-content-start container-fluid mt-3 px-0">
+                        <a href="https://github.com/hngok404/w3css_templates_architect" target="_blank"
+                            class="btn btn-outline-primary me-3 fs-7">Github</a>
+                        <a href="https://hngok404.github.io/w3css_templates_architect/"
+                            class="btn btn-outline-info fs-7" target="_blank">Live Demo</a>
+
+                    </div>
+
+                </div>
+                <div class="container-fluid d-flex rounded-5 bg-column my-3 m-auto justify-content-center flex-column align-items-center p-3 pb-4
+                            hover-transparent transition-e-i-e border-transparent">
+                    <div class="flex-shrink-0 my-3" style="height: 10rem;">
+                        <img class="img-fluid rounded-4 img_cover" src="./assets/img/img_temp_cafe.jpeg"
+                            alt="img_temp_cafe" style="height:100%">
+                    </div>
+                    <p class="text-light fs-6 text-capitalize text-line-clamp-2">temp cafe form template W3schools.com
+                    </p>
+                    <div class="d-flex justify-content-start container-fluid mt-3 px-0">
+                        <a href="https://github.com/hngok404/template_w3_thecafe" target="_blank"
+                            class="btn btn-outline-primary me-3 fs-7">Github</a>
+                        <a href="https://hngok404.github.io/template_w3_thecafe/" class="btn btn-outline-info fs-7"
+                            target="_blank">Live Demo</a>
+
+                    </div>
+
+                </div>
+                <div class="container-fluid d-flex rounded-5 bg-column my-3 m-auto justify-content-center flex-column align-items-center p-3 pb-4
+                            hover-transparent transition-e-i-e border-transparent">
+                    <div class="flex-shrink-0 my-3" style="height: 10rem;">
+                        <img class="img-fluid rounded-4 img_cover" src="./assets/img/img_temp_fashion_blog.jpeg"
+                            alt="img_temp_fashion_blog" style="height:100%">
+                    </div>
+                    <p class="text-light fs-6 text-capitalize text-line-clamp-2">temp fashion blog form template
+                        W3schools.com </p>
+                    <div class="d-flex justify-content-start container-fluid mt-3 px-0">
+                        <a href="https://github.com/hngok404/w3_fashion" target="_blank"
+                            class="btn btn-outline-primary me-3 fs-7">Github</a>
+                        <a href="https://hngok404.github.io/w3_fashion/" class="btn btn-outline-info fs-7"
+                            target="_blank">Live
+                            Demo</a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!------------------------------End Portfolio --------------------------------------->
+
+        <!--------------------------------Begin Contact --------------------------------------->
+
+        <div id="contact" class="contact d-flex flex-column mb-5">
+            <div class="contact d-flex my-5 flex-column align-items-center justify-content-center container-fluid">
+                <p class="text-light fs-6 text-center m-0 text-capitalize">get it touch</p>
+                <p class="text-center text-info text-opacity-75 text-capitalize fs-4 p-2 m-0 ">Contact me</p>
+            </div>
+            <div class="d-flex container-fluid flex-column flex-md-row gap-5">
+                <div class="container-fluid col-md-4 d-flex flex-column">
                     <div
-                        class="g-col-6 d-flex rounded-2 bg-column my-3 m-auto xy-12 justify-content-center flex-column align-items-center flex-shrink-0 hover-transparent transition-e-i-e">
-                        <span class="text-info material-symbols-outlined m-4">
-                            workspace_premium
+                        class="bg-column d-flex flex-column align-items-center rounded-4 py-3 mb-3 hover-transparent transition-e-i-e border-transparent">
+                        <span class="material-symbols-outlined text-light fs-5 my-1">
+                            mail
                         </span>
-                        <p class="text-info text-capitalize fs-6 m-2 fw-semibold">experience</p>
-                        <p class="text-capitalize text-light opacity-75 fs-6 fw-light">Basics</p>
+                        <span class="text-light fs-6 text-capitalize my-1">Message</span>
+                        <span class="text-muted fs-7 text-lowercase my-1">forwork@gmail.com</span>
+                        <a class="fs-7 text-capitalize my-1 text-primary nav-link"
+                            href="mailto:fctrainhoi@gmail.com">send a Message</a>
                     </div>
                     <div
-                        class="g-col-6 d-flex rounded-2 bg-column my-3 m-auto xy-12 justify-content-center flex-column align-items-center flex-shrink-0 hover-transparent transition-e-i-e">
-                        <span class="text-info material-symbols-outlined m-4">
-                            group
-                        </span>
-                        <p class="text-info text-capitalize fs-6 m-2 fw-semibold">Clients</p>
-                        <p class="text-capitalize text-light opacity-75 fs-6 fw-light">No</p>
-
+                        class="bg-column d-flex flex-column align-items-center rounded-4 py-3 mb-3 hover-transparent transition-e-i-e border-transparent">
+                        <i class="text-light fs-5 my-1 ti ti-brand-messenger"></i>
+                        <span class="text-light fs-6 text-capitalize my-1">Messenger</span>
+                        <span class="text-muted fs-7 text-capitalize my-1">Hoang Trong</span>
+                        <a target="_blank" class="fs-7 text-capitalize my-1 text-primary nav-link"
+                            href="http://m.me/hoangday204">send a
+                            Message</a>
                     </div>
                     <div
-                        class="g-col-6 d-flex rounded-2 bg-column my-3 m-auto xy-12 justify-content-center flex-column align-items-center flex-shrink-0 hover-transparent transition-e-i-e">
-                        <span class="text-info material-symbols-outlined m-4">
-                            bookmark
-                        </span>
-                        <p class="text-info text-capitalize fs-6 m-2 fw-semibold">Projects</p>
-                        <p class="text-capitalize text-light opacity-75 fs-6 fw-light">5+ completed</p>
-
+                        class="bg-column d-flex flex-column align-items-center rounded-4 py-3 mb-3 hover-transparent transition-e-i-e border-transparent">
+                        <i class="text-light fs-5 ti ti-phone-call"></i>
+                        <span class="text-light fs-6 text-capitalize my-1">Phone</span>
+                        <span class="text-muted fs-7 text-lowercase my-1">123-456-7890</span>
+                        <a class="fs-7 text-capitalize my-1 text-primary nav-link" href="phone:123-456-7890">send a
+                            Message</a>
                     </div>
+
+
                 </div>
-                <div class="p-lg-2 p-xl-2 p-md-2 px-5 w-40">
-                    <p class="text-capitalize text-light opacity-75 fs-6 fw-light">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing
-                        elit. Reiciendis nisi maxime reprehenderit adipisci. Harum modi maiores adipisci mollitia
-                        voluptas, iure at.
-                        Libero omnis officiis impedit consectetur? Asperiores ex consequuntur soluta.</p>
+                <div class="container-fluid col-md-8 p-0">
+                    <form id="form" class="px-3">
+                        <div class="mb-3">
+                            <input name="name" type="text"
+                                class="form-control border-info fs-7 text-light p-3 bg-transparent"
+                                placeholder="Your Full Name">
+                        </div>
+                        <div class="mb-3">
+                            <input name="email" type="email"
+                                class="form-control border-info fs-7 text-light p-3 bg-transparent" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control border-info fs-7 text-light p-3 bg-transparent"
+                                placeholder="Your Message" style="min-height: 8rem; resize: none;"></textarea>
+                        </div>
+                        <button id="button" type="submit" class="btn text-muted fs-7 btn-info">Send Message</button>
+                    </form>
                 </div>
-                <div class="p-lg-2 p-xl-2 p-md-2 px-5"><a href="#"
-                        class="btn btn-info btn-outline-info m-lg-2 m-xl-2">Let's Talk</a></div>
             </div>
         </div>
-        <div class="skills m-5">
-            <p class="text-light fs-6 text-center m-0 text-capitalize">what skills i have</p>
-            <p class="text-center text-info text-opacity-75 text-capitalize fs-4 p-2 m-0 ">My experience</p>
-        </div>
-        <div
-            class="d-flex justify-content-evenly flex-column flex-xl-row flex-md-row flex-lg-row flex-xxl-row gap-4 container-lg container-xl p-3">
-            <div
-                class="bg-column justify-content-center border-transparent rounded  col-md-6 d-flex align-items-center flex-column hover-transparent transition-e-i-e">
-                <p class="text-capitalize fs-6 m-3 fw-semibold text-info">Frontend development</p>
-                <div class="d-flex row container-fluid mb-4">
-                    <div class="col-6 d-flex align-items-start my-3">
-                        <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
-                        <div class="mx-2 d-flex flex-column">
-                            <span class="text-light text-uppercase fs-6 fw-normal mb-2">HTML</span>
-                            <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
-                        </div>
-                    </div>
-                    <div class="col-6 d-flex align-items-start my-3">
-                        <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
-                        <div class="mx-2 d-flex flex-column">
-                            <span class="text-light text-uppercase fs-6 fw-normal mb-2">CSS</span>
-                            <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
-                        </div>
-                    </div>
-                    <div class="col-6 d-flex align-items-start my-3">
-                        <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
-                        <div class="mx-2 d-flex flex-column">
-                            <span class="text-light text-capitalize fs-6 fw-normal mb-2">Javascript</span>
-                            <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
-                        </div>
-                    </div>
-                    <div class="col-6 d-flex align-items-start my-3">
-                        <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
-                        <div class="mx-2 d-flex flex-column">
-                            <span class="text-light text-capitalize fs-6 fw-normal mb-2">bootstrap</span>
-                            <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
-                        </div>
-                    </div>
 
-
-                </div>
-            </div>
-            <div
-                class="bg-column justify-content-center border-transparent rounded  col-md-6 d-flex align-items-center flex-column hover-transparent transition-e-i-e">
-                <p class="text-capitalize fs-6 m-3 fw-semibold text-info">Backend development</p>
-                <div class="d-flex row container-fluid mb-4">
-                    <div class="col-6 d-flex align-items-start my-3">
-                        <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
-                        <div class="mx-2 d-flex flex-column">
-                            <span class="text-light text-capitalize fs-6 fw-normal mb-2">None</span>
-                            <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
-                        </div>
-                    </div>
-                    <div class="col-6 d-flex align-items-start my-3">
-                        <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
-                        <div class="mx-2 d-flex flex-column">
-                            <span class="text-light text-capitalize fs-6 fw-normal mb-2">None</span>
-                            <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
-                        </div>
-                    </div>
-                    <div class="col-6 d-flex align-items-start my-3">
-                        <img class="img-fluid icon m-1" src="./assets/img/verified.png" alt="">
-                        <div class="mx-2 d-flex flex-column">
-                            <span class="text-light text-capitalize fs-6 fw-normal mb-2">None</span>
-                            <span class="text-light opacity-75 text-capitalize fs-6 fw-normal ">Basics</span>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-        <div class="works d-flex m-5 flex-column align-items-center justify-content-center">
-            <p class="text-light fs-6 text-center m-0 text-capitalize">my recent work</p>
-            <p class="text-center text-info text-opacity-75 text-capitalize fs-4 p-2 m-0 ">Portfolio</p>
-        
-        </div>
-        <div
-            class="d-grid justify-content-center g-col-2 g-col-sm-2 g-col-md-2 g-col-lg-3 gap-4 container-lg container-xl">
-            <div
-                class="container-fluid d-flex rounded-5 bg-column my-3 m-auto justify-content-center flex-column align-items-center p-3 pb-4">
-                <div class="flex-shrink-0 my-3" style="height: 10rem;">
-                    <img class="img-fluid rounded-4 img_cover" src="./assets/img/img_temp_architect.jpeg" alt="img_temp_architect" style="height:100%">
-                </div>
-                <p class="text-light fs-6 text-capitalize text-line-clamp-2">temp_architect form template W3schools.com </p>
-                <div class="d-flex justify-content-start container-fluid mt-3 px-0">
-                    <a href="https://github.com/hngok404/w3css_templates_architect" target="_blank" class="btn btn-outline-primary me-3">Github</a>
-                    <a href="https://hngok404.github.io/w3css_templates_architect/" class="btn btn-outline-info " target="_blank">Live Demo</a>
-
-                </div>
-                
-            </div>
-            <div
-                class="container-fluid d-flex rounded-5 bg-column my-3 m-auto justify-content-center flex-column align-items-center p-3 pb-4">
-                <div class="flex-shrink-0 my-3" style="height: 10rem;">
-                    <img class="img-fluid rounded-4 img_cover" src="./assets/img/img_temp_cafe.jpeg" alt="img_temp_cafe"
-                        style="height:100%">
-                </div>
-                <p class="text-light fs-6 text-capitalize text-line-clamp-2">temp cafe form template W3schools.com </p>
-                <div class="d-flex justify-content-start container-fluid mt-3 px-0">
-                    <a href="https://github.com/hngok404/template_w3_thecafe" target="_blank" class="btn btn-outline-primary me-3">Github</a>
-                    <a href="https://hngok404.github.io/template_w3_thecafe/" class="btn btn-outline-info " target="_blank">Live Demo</a>
-            
-                </div>
-            
-            </div>
-            <div
-                class="container-fluid d-flex rounded-5 bg-column my-3 m-auto justify-content-center flex-column align-items-center p-3 pb-4">
-                <div class="flex-shrink-0 my-3" style="height: 10rem;">
-                    <img class="img-fluid rounded-4 img_cover" src="./assets/img/img_temp_fashion_blog.jpeg" alt="img_temp_fashion_blog"
-                        style="height:100%">
-                </div>
-                <p class="text-light fs-6 text-capitalize text-line-clamp-2">temp fashion blog form template W3schools.com </p>
-                <div class="d-flex justify-content-start container-fluid mt-3 px-0">
-                    <a href="https://github.com/hngok404/w3_fashion" target="_blank" class="btn btn-outline-primary me-3">Github</a>
-                    <a href="https://hngok404.github.io/w3_fashion/" class="btn btn-outline-info " target="_blank">Live Demo</a>
-            
-                </div>
-            
-            </div>
-        
-        
-        </div>
-        <div class="works d-flex m-5 flex-column align-items-center justify-content-center">
-            <p class="text-light fs-6 text-center m-0 text-capitalize">get it touch</p>
-            <p class="text-center text-info text-opacity-75 text-capitalize fs-4 p-2 m-0 ">Contact me</p>
-        
-        </div>
+        <!--------------------------------End Contact --------------------------------------->
     </div>
-
     
 
+    <!--------------------------------Begin Footer --------------------------------------->
+    
+    <div class="footer bg-info mt-3 p-5 ">
+        <h3 class="fw-light text-uppercase text-center mb-4">Hoang</h3>
+        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 mb-4">
+            <a href="#home" class="fs-7 text-dark ">Home</a>
+            <a href="#about" class="fs-7 text-dark ">About</a>
+            <a href="#experience" class="fs-7 text-dark ">Experience</a>
+            <a href="#portfolio" class="fs-7 text-dark ">Portfolio</a>
+            <a href="#contact" class="fs-7 text-dark ">Contact</a>
+        </div>
+        <div class="d-flex justify-content-center gap-3 mb-4">
+            <a href="http://facebook.com"
+                class="text-bg-dark fs-5 d-flex fw-light rounded-3 xy-4 justify-content-center align-items-center hover-transparent transition-e-i-e">
+                <i class="ti ti-brand-facebook"></i>
+            </a>
+            <a href=""
+                class="text-bg-dark fs-5 d-flex fw-light rounded-3 xy-4 justify-content-center align-items-center hover-transparent transition-e-i-e">
+                <i class="ti ti-brand-instagram"></i>
+            </a>
+            <a href=""
+                class="text-bg-dark fs-5 d-flex fw-light rounded-3 xy-4 justify-content-center align-items-center hover-transparent transition-e-i-e">
+                <i class="ti ti-brand-github "></i>
+            </a>
+        </div>
+        <p class="m-3 text-center text-muted fs-7">@ByHoang</p>
+    </div>
 
+    <!--------------------------------End Footer ----------------------------------------->
+
+    <!--------------------------------Begin Navigation --------------------------------------->
+    
+    <nav id="navbar-example2"
+        class="navbar bg-nav position-fixed bottom-0 start-50 translate-middle-x rounded-5 mb-2 px-3 justify-content-center d-flex"
+        style="width: 15rem ;">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link rounded-circle text-light xy-4 d-flex justify-content-center align-items-center p-0"
+                    href="#home">
+                    <i class="ti ti-home-2"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-circle text-light xy-4 d-flex justify-content-center align-items-center"
+                    href="#about">
+                    <i class="ti ti-user"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-circle text-light xy-4 d-flex justify-content-center align-items-center"
+                    href="#experience">
+                    <i class="ti ti-book-2"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-circle text-light xy-4 d-flex justify-content-center align-items-center"
+                    href="#portfolio">
+                    <i class="ti ti-heart-handshake"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-circle text-light xy-4 d-flex justify-content-center align-items-center"
+                    href="#contact">
+                    <i class="ti ti-message-2"></i>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!--------------------------------End Navigation --------------------------------------->
+
+    <!-- JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('KM2BQE6aA6khykxBX')
+    </script>
+    <script src="./assets/js/sendMassage.js"></script>
 </body>
 
 </html>
